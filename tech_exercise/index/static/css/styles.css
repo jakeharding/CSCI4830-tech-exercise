@@ -1,0 +1,58 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+div {
+  position:fixed;
+  height: 50px;
+  width: 250px;
+}
+
+@keyframes bounce {
+  0%       { bottom:15%; }
+  25%, 75% { bottom:30%; }
+  50%      { bottom:80%; }
+  100%     {bottom:0;}
+    /*0%   {*/
+      /*font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;*/
+      /*left:var(--animate-left);*/
+      /*top:var(--animate-top);*/
+    /*}*/
+    /*20%  {*/
+      /*font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;*/
+      /*!*left:20%; top:20%;*!*/
+      /*!*left:var(--animate-left);*!*/
+      /*!*top:var(--animate-top);*!*/
+    /*}*/
+    /*40%  {*/
+      /*font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;*/
+      /*!*left:40%; top:40%;*!*/
+      /*!*left:var(--animate-left);*!*/
+      /*!*top:var(--animate-top);*!*/
+    /*}*/
+    /*60%  {*/
+      /*font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;*/
+      /*!*left:60%; top:60%;*!*/
+      /*!*left:var(--animate-left);*!*/
+      /*!*top:var(--animate-top);*!*/
+    /*}*/
+    /*80% {*/
+      /*font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;*/
+      /*!*left:80%; top:80%;*!*/
+      /*!*left:var(--animate-left);*!*/
+      /*!*top:var(--animate-top);*!*/
+    /*}*/
+    /*81% {*/
+      /*font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;*/
+      /*!*left:var(--animate-left);*!*/
+      /*!*top:var(--animate-top);*!*/
+    /*}*/
+    /*100% {*/
+      /*font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;*/
+      /*!*left:0%; top:0%;*!*/
+      /*!*left:var(--animate-left);*!*/
+      /*!*top:var(--animate-top);*!*/
+    /*}*/
+}
