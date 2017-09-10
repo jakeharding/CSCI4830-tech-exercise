@@ -1,6 +1,16 @@
-{% extends 'index/index.html' %}
+{% extends 'index/blogentry_list.html' %}
 
-{% block blogentry %}
-  {%  csrf_token %}
-  {{  form }}
+{% block nav_link %}
+  <a class="float-right" href="{%  url 'blog-entry-list' %}">
+      Go to home page
+  </a>
+{% endblock %}
+
+{% block right_side %}
+  <form method="post">
+    {%  csrf_token %}
+    {{ form }}
+    <button type="submit" class="btn btn-primary float-left">Create blog</button>
+  </form>
+
 {% endblock %}

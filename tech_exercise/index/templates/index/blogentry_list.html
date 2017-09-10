@@ -1,5 +1,29 @@
-{%  extends 'index/index.html' %}
+{% extends 'index/base.html' %}
 
-{% block blogentry %}
-  {{ form }}
-{%  endblock %}
+{% block content %}
+  <div class="row">
+    <div class="col-6 mx-auto text-left">
+      <ul class="list-group">
+        {%  for b in object_list %}
+          <a class="no-underline" href="{% url 'blog-entry-detail' b.pk %}">
+            <li class="list-group-item text-dark mb-4">
+              {{ b.title }}
+            <br>
+              By: {{ b.author }}<br>
+              Created: {{  b.created_at | date }}
+          </li>
+          </a>
+          {% empty %}
+            <p>No blogs to display for {{ search }}.
+              <a href="{%  url 'blog-entry-list' %}">Clear search</a>
+            </p>
+          {%  endfor %}
+      </ul>
+    </div>
+
+    <div class="col-6 mx-auto text-center">
+      {%  block right_side %}
+      {%  endblock %}
+    </div>
+  </div>
+{% endblock %}

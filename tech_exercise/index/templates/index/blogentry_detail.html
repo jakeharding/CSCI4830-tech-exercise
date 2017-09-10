@@ -1,0 +1,12 @@
+{% extends 'index/base.html' %}
+
+{% block nav_link %}
+  <a class="float-right" href="{%  url 'blog-entry-list' %}">
+      Go to home page
+  </a>
+{% endblock %}
+
+{% block content %}
+  {{ form }}
+{% endblock %}
+
