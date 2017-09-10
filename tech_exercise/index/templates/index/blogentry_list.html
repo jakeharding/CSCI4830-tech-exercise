@@ -14,8 +14,10 @@
           </li>
           </a>
           {% empty %}
-            <p>No blogs to display for {{ search }}.
+            <p>No blogs to display
+              {% if search %}for {{ search }} <br>
               <a href="{%  url 'blog-entry-list' %}">Clear search</a>
+            {%  endif %}
             </p>
           {%  endfor %}
       </ul>
