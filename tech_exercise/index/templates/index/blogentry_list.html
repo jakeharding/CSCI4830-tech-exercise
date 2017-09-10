@@ -1,9 +1,5 @@
 {%  extends 'index/index.html' %}
 
 {% block blogentry %}
-  {%  for b in object_list %}
-    <li><a href="{% url 'blog-entry-detail' b.pk %}"{{ b.title }}&nbsp;{{ b.author }}&nbsp;{{  b.created_at | date }}</li>
-  {%  empty %}
-    <li>No blogs yet. <a href="{% url 'blog-entry-create' %}">Click here to add one.</a></li>
-  {%  endfor %}
+  {{ form }}
 {%  endblock %}

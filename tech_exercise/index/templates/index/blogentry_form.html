@@ -1,4 +1,6 @@
 {% extends 'index/index.html' %}
+
 {% block blogentry %}
-  {{ form }}
+  {%  csrf_token %}
+  {{  form }}
 {% endblock %}
